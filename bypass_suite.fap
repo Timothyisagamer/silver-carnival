@@ -1,0 +1,10 @@
+{
+  "appid": "bypass_suite",
+  "version": "1.0.0",
+  "entry_point": "/ext/apps/bypass_suite/bypass_combined.js",
+  "permissions": [
+    "bluetooth_admin",
+    "usb_control",
+    "system_root"
+  ]
+}

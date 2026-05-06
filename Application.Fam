@@ -1,0 +1,20 @@
+# Bypass Suite - Application Metadata
+# Built for Flipper Zero bypass payloads
+
+name: "Bypass Suite"
+entry_point: "/ext/apps/bypass_suite/bypass_combined.js"
+stack_size: 4k
+heap_size: 8k
+api_version: 2.0
+
+permissions:
+  - bluetooth_admin   # For BLE spoofing
+  - usb_control       # For HID attacks
+  - system_root       # Full system access
+  - network_full      # Network capabilities
+
+hardware_requirements:
+  - external_flash    # Extra storage for payloads
+
+dependencies:
+  - framework.js      # Flipper's core framework (already on device)
